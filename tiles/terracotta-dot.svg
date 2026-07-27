@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <rect width="120" height="120" fill="#F0E4D2"/>
+  <!-- Background diamond pattern -->
+  <path d="M60 0 L120 60 L60 120 L0 60Z" fill="#C4724E" opacity="0.06"/>
+  <!-- Main dots - larger, richer pattern -->
+  <circle cx="30" cy="30" r="13" fill="#C4724E" opacity="0.85"/>
+  <circle cx="60" cy="30" r="10" fill="#D4835E" opacity="0.7"/>
+  <circle cx="90" cy="30" r="13" fill="#C4724E" opacity="0.85"/>
+  <circle cx="30" cy="60" r="10" fill="#D4835E" opacity="0.7"/>
+  <circle cx="60" cy="60" r="15" fill="#C4724E" opacity="0.9"/>
+  <circle cx="90" cy="60" r="10" fill="#D4835E" opacity="0.7"/>
+  <circle cx="30" cy="90" r="13" fill="#C4724E" opacity="0.85"/>
+  <circle cx="60" cy="90" r="10" fill="#D4835E" opacity="0.7"/>
+  <circle cx="90" cy="90" r="13" fill="#C4724E" opacity="0.85"/>
+  <!-- Inner dot highlights -->
+  <circle cx="30" cy="30" r="5" fill="#E8A080" opacity="0.5"/>
+  <circle cx="90" cy="30" r="5" fill="#E8A080" opacity="0.5"/>
+  <circle cx="60" cy="60" r="7" fill="#E8A080" opacity="0.4"/>
+  <circle cx="30" cy="90" r="5" fill="#E8A080" opacity="0.5"/>
+  <circle cx="90" cy="90" r="5" fill="#E8A080" opacity="0.5"/>
+  <!-- Corner accents -->
+  <circle cx="8" cy="8" r="4" fill="#C4724E" opacity="0.3"/>
+  <circle cx="112" cy="8" r="4" fill="#C4724E" opacity="0.3"/>
+  <circle cx="8" cy="112" r="4" fill="#C4724E" opacity="0.3"/>
+  <circle cx="112" cy="112" r="4" fill="#C4724E" opacity="0.3"/>
+  <rect x="3" y="3" width="114" height="114" fill="none" stroke="#B8A88A" stroke-width="4" rx="3"/>
+</svg>
