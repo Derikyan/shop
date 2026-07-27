@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <rect width="120" height="120" fill="#F2E8DD"/>
+  <!-- Bloom petals - 3 large overlapping circles -->
+  <circle cx="42" cy="48" r="18" fill="#D4724E" opacity="0.45"/>
+  <circle cx="78" cy="48" r="18" fill="#D4724E" opacity="0.45"/>
+  <circle cx="60" cy="78" r="18" fill="#D4724E" opacity="0.45"/>
+  <!-- Inner petal overlaps -->
+  <circle cx="50" cy="55" r="10" fill="#E8956E" opacity="0.4"/>
+  <circle cx="70" cy="55" r="10" fill="#E8956E" opacity="0.4"/>
+  <circle cx="60" cy="70" r="10" fill="#E8956E" opacity="0.4"/>
+  <!-- Center -->
+  <circle cx="60" cy="58" r="8" fill="#D4724E" opacity="0.7"/>
+  <circle cx="60" cy="58" r="4" fill="#E8A080"/>
+  <!-- Stem and leaves -->
+  <line x1="60" y1="30" x2="60" y2="12" stroke="#4A7C59" stroke-width="2.5"/>
+  <path d="M60 20 Q68 15 72 22" fill="#4A7C59" opacity="0.6"/>
+  <path d="M60 24 Q52 19 48 26" fill="#4A7C59" opacity="0.6"/>
+  <!-- Antenna-like details at top -->
+  <circle cx="55" cy="10" r="3" fill="#D4A843"/>
+  <circle cx="65" cy="14" r="2.5" fill="#D4A843"/>
+  <line x1="55" y1="13" x2="55" y2="22" stroke="#4A7C59" stroke-width="1.5"/>
+  <line x1="65" y1="17" x2="65" y2="24" stroke="#4A7C59" stroke-width="1.5"/>
+  <!-- Subtle background dots -->
+  <circle cx="18" cy="18" r="2" fill="#D4724E" opacity="0.2"/>
+  <circle cx="102" cy="18" r="2" fill="#D4724E" opacity="0.2"/>
+  <circle cx="18" cy="102" r="2" fill="#D4724E" opacity="0.2"/>
+  <circle cx="102" cy="102" r="2" fill="#D4724E" opacity="0.2"/>
+  <rect x="3" y="3" width="114" height="114" fill="none" stroke="#B8A88A" stroke-width="4" rx="3"/>
+</svg>

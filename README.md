@@ -1,60 +1,49 @@
-# Тестовое задание: Разработка интерактивной веб-формы заказа «The Artisan Kiln»
+# The Artisan Kiln - Ceramic Tile Order Form
 
-## Описание задачи
-Необходимо реализовать фронтенд-часть одностраничного приложения для заказа керамической плитки. Интерфейс должен быть отзывчивым и поддерживать два состояния:
-1.  **Mobile:** Вертикальный макет формы заказа - дизайн в файле [design_mobile.png](design/design_mobile.png).
-2.  **Desktop:** Расширенная версия с интерактивным инструментом визуализации дизайна - дизайн в файле [design_desktop.png](design/design_desktop.png).
+This is a responsive, interactive single-page application built for "The Artisan Kiln" to order ceramic tiles and visualize custom designs.
 
-## Стек технологий
-* **Framework:** Next.js.
-* **Язык:** TypeScript.
-* **Стилизация:** Tailwind CSS.
-* **State Management:** Redux (рекомендуется Redux Toolkit).
+## Features
 
----
+- **Responsive Design**: Pixel-perfect layout tailored for both Mobile (vertical stack) and Desktop (3-column layout) environments.
+- **Interactive Shopping Cart**: Add, remove, and adjust quantities of tiles with real-time total calculations and framer-motion animations.
+- **Design Visualizer Tool (Desktop Only)**: A 7x7 interactive grid allowing users to drag/click-to-place tiles from a diverse palette to visualize their design.
+- **Checkout Form**: Comprehensive form with validation (email, phone, credit card format, expiry, CVV) and payment method selection.
+- **Redux State Management**: Uses Redux Toolkit for centralized state management across Cart, Design Grid, and Checkout layers.
 
-## Технические требования
+## Tech Stack
 
-### 1. Верстка и Адаптив (HTML/CSS/Tailwind)
-* **Pixel Perfect:** Максимальное соответствие предоставленным макетам (шрифты, отступы, цветовая схема).
-* **Responsive Design:** Реализовать адаптивный переход между мобильной и десктопной версиями.
-* **Tailwind CSS:** Использование утилит Tailwind для всей стилизации. Кастомные настройки (цвета, шрифты) должны быть вынесены в `tailwind.config.js`.
+- **Framework:** Next.js (App Router)
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS v4 (with custom design tokens in `globals.css`)
+- **State Management:** Redux Toolkit (`react-redux`)
+- **Animations:** Framer Motion
+- **Testing:** Jest
 
-### 2. Функциональность (React/TypeScript)
-* **Shopping Cart:**
-    * Изменение количества (Quantity) для каждой плитки.
-    * Удаление позиций из списка.
-    * Динамический расчет **Subtotal**, **Shipping** и **Grand Total**.
-* **Design Tool (только Desktop):**
-    * Интерактивная сетка 7x7.
-    * Логика «выбора и размещения» плиток из палитры (Design Palette) в сетку.
-* **Checkout Form:**
-    * Валидация полей (Email, номер карты, обязательные поля).
-    * Переключение методов оплаты (Credit Card, PayPal, Apple Pay, Bank Transfer).
+## Getting Started
 
-### 3. Управление состоянием (Redux)
-* Данные корзины и состояние сетки визуализатора должны храниться в глобальном хранилище (Store).
-* Инициализация приложения начальными данными из макета (Ocean Wave, Forest Fern, Terracotta Dot, Yellow Star).
+1. **Install Dependencies**
+   ```bash
+   npm install
+   ```
 
----
+2. **Run the Development Server**
+   ```bash
+   npm run dev
+   ```
 
-## Бизнес-логика расчетов
-* `Subtotal` = Сумма (Количество * Цена за ед.).
-* `Shipping`: Если `Subtotal > $500`, доставка — Бесплатно ($0.00), иначе — $25.00.
-* `Grand Total` = Subtotal + Shipping.
+3. **Open the Application**
+   Navigate to [http://localhost:3000](http://localhost:3000) in your browser.
 
----
+## Running Tests
 
-## Будет плюсом
-* Использование анимаций (например, через `framer-motion`) при взаимодействии с корзиной или сеткой.
-* Написание Unit-тестов для логики расчетов.
-* Чистая архитектура компонентов и типизация всех сущностей.
+To run the unit tests for the business logic:
+```bash
+npm run test
+```
 
----
+## Build for Production
 
-## Формат сдачи
-1.  Ссылка на публичный репозиторий (GitHub/GitLab).
-2.  Ссылка на Demo (Vercel/Self-Hosted).
-3.  `README.md` в корне проекта с инструкцией по запуску (`npm install`, `npm run dev`).
-
-**Желаемый срок выполнения:** 3–5 рабочих дней.
+```bash
+npm run build
+npm run start
+```

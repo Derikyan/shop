@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <rect width="120" height="120" fill="#E8E0D4"/>
+  <!-- Concentric hexagons -->
+  <polygon points="60,12 100,32 100,88 60,108 20,88 20,32" fill="#2C5F8A" opacity="0.08"/>
+  <polygon points="60,12 100,32 100,88 60,108 20,88 20,32" fill="none" stroke="#2C5F8A" stroke-width="3"/>
+  <polygon points="60,24 90,38 90,82 60,96 30,82 30,38" fill="none" stroke="#3B6B9E" stroke-width="2.5"/>
+  <polygon points="60,36 80,46 80,74 60,84 40,74 40,46" fill="#3B6B9E" opacity="0.15"/>
+  <polygon points="60,36 80,46 80,74 60,84 40,74 40,46" fill="none" stroke="#4A7FAD" stroke-width="2"/>
+  <polygon points="60,48 70,53 70,67 60,72 50,67 50,53" fill="#3B6B9E" opacity="0.25"/>
+  <!-- Center diamond -->
+  <polygon points="60,50 68,60 60,70 52,60" fill="#2C5F8A" opacity="0.4"/>
+  <!-- Cross lines -->
+  <line x1="60" y1="12" x2="60" y2="108" stroke="#2C5F8A" stroke-width="1" opacity="0.3"/>
+  <line x1="20" y1="60" x2="100" y2="60" stroke="#2C5F8A" stroke-width="1" opacity="0.3"/>
+  <!-- Corner decorations -->
+  <circle cx="15" cy="15" r="5" fill="none" stroke="#3B6B9E" stroke-width="1.5" opacity="0.4"/>
+  <circle cx="105" cy="15" r="5" fill="none" stroke="#3B6B9E" stroke-width="1.5" opacity="0.4"/>
+  <circle cx="15" cy="105" r="5" fill="none" stroke="#3B6B9E" stroke-width="1.5" opacity="0.4"/>
+  <circle cx="105" cy="105" r="5" fill="none" stroke="#3B6B9E" stroke-width="1.5" opacity="0.4"/>
+  <rect x="3" y="3" width="114" height="114" fill="none" stroke="#B8A88A" stroke-width="4" rx="3"/>
+</svg>

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <rect width="120" height="120" fill="#D8E4ED"/>
+  <!-- Quadrant fills -->
+  <rect x="6" y="6" width="52" height="52" fill="#2C5F8A" opacity="0.18" rx="3"/>
+  <rect x="62" y="6" width="52" height="52" fill="#3B6B9E" opacity="0.12" rx="3"/>
+  <rect x="6" y="62" width="52" height="52" fill="#3B6B9E" opacity="0.12" rx="3"/>
+  <rect x="62" y="62" width="52" height="52" fill="#2C5F8A" opacity="0.18" rx="3"/>
+  <!-- Diamond overlay pattern -->
+  <path d="M60 6 L114 60 L60 114 L6 60Z" fill="none" stroke="#2C5F8A" stroke-width="2" opacity="0.2"/>
+  <!-- Central arabesque cross -->
+  <path d="M60 20 Q80 40 60 60 Q40 80 60 100" fill="none" stroke="#2C5F8A" stroke-width="2.5" opacity="0.5"/>
+  <path d="M20 60 Q40 40 60 60 Q80 80 100 60" fill="none" stroke="#2C5F8A" stroke-width="2.5" opacity="0.5"/>
+  <!-- Circles in quadrants -->
+  <circle cx="32" cy="32" r="14" fill="none" stroke="#E0EAF0" stroke-width="2.5"/>
+  <circle cx="32" cy="32" r="7" fill="#2C5F8A" opacity="0.2"/>
+  <circle cx="88" cy="88" r="14" fill="none" stroke="#E0EAF0" stroke-width="2.5"/>
+  <circle cx="88" cy="88" r="7" fill="#2C5F8A" opacity="0.2"/>
+  <!-- Small accent circles -->
+  <circle cx="88" cy="32" r="8" fill="none" stroke="#2C5F8A" stroke-width="1.5" opacity="0.4"/>
+  <circle cx="32" cy="88" r="8" fill="none" stroke="#2C5F8A" stroke-width="1.5" opacity="0.4"/>
+  <!-- Center dot -->
+  <circle cx="60" cy="60" r="5" fill="#2C5F8A" opacity="0.3"/>
+  <circle cx="60" cy="60" r="2.5" fill="#E0EAF0"/>
+  <!-- Grid lines -->
+  <line x1="60" y1="6" x2="60" y2="114" stroke="#2C5F8A" stroke-width="1.5" opacity="0.15"/>
+  <line x1="6" y1="60" x2="114" y2="60" stroke="#2C5F8A" stroke-width="1.5" opacity="0.15"/>
+  <rect x="3" y="3" width="114" height="114" fill="none" stroke="#B8A88A" stroke-width="4" rx="3"/>
+</svg>

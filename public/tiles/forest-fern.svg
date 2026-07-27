@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <rect width="120" height="120" fill="#E2E8D8"/>
+  <!-- Background leaf shapes -->
+  <path d="M60 8 L62 60 L60 112 L58 60Z" fill="#4A7C59" opacity="0.2"/>
+  <!-- Left fern fronds -->
+  <path d="M58 25 Q30 20 20 40 Q30 30 58 35Z" fill="#5A9A6B" opacity="0.7"/>
+  <path d="M58 40 Q25 38 15 58 Q28 48 58 50Z" fill="#4A7C59" opacity="0.75"/>
+  <path d="M58 55 Q22 55 14 75 Q26 65 58 65Z" fill="#3D6B4C" opacity="0.7"/>
+  <path d="M58 70 Q28 72 20 90 Q30 80 58 78Z" fill="#4A7C59" opacity="0.65"/>
+  <!-- Right fern fronds (mirrored) -->
+  <path d="M62 25 Q90 20 100 40 Q90 30 62 35Z" fill="#5A9A6B" opacity="0.7"/>
+  <path d="M62 40 Q95 38 105 58 Q92 48 62 50Z" fill="#4A7C59" opacity="0.75"/>
+  <path d="M62 55 Q98 55 106 75 Q94 65 62 65Z" fill="#3D6B4C" opacity="0.7"/>
+  <path d="M62 70 Q92 72 100 90 Q90 80 62 78Z" fill="#4A7C59" opacity="0.65"/>
+  <!-- Central stem -->
+  <line x1="60" y1="12" x2="60" y2="108" stroke="#3D6B4C" stroke-width="3"/>
+  <!-- Center diamond accent -->
+  <polygon points="60,45 70,55 60,65 50,55" fill="#5A9A6B" stroke="#3D6B4C" stroke-width="1.5"/>
+  <polygon points="60,49 66,55 60,61 54,55" fill="#E2E8D8"/>
+  <!-- Small leaf details -->
+  <path d="M30 15 Q35 10 40 18" fill="none" stroke="#4A7C59" stroke-width="1.5" opacity="0.5"/>
+  <path d="M80 15 Q85 10 90 18" fill="none" stroke="#4A7C59" stroke-width="1.5" opacity="0.5"/>
+  <path d="M30 105 Q35 100 40 108" fill="none" stroke="#4A7C59" stroke-width="1.5" opacity="0.5"/>
+  <path d="M80 105 Q85 100 90 108" fill="none" stroke="#4A7C59" stroke-width="1.5" opacity="0.5"/>
+  <rect x="3" y="3" width="114" height="114" fill="none" stroke="#B8A88A" stroke-width="4" rx="3"/>
+</svg>

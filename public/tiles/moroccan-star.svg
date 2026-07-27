@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <rect width="120" height="120" fill="#2C3E6B"/>
+  <!-- Background star burst -->
+  <g transform="translate(60,60)" opacity="0.15">
+    <line x1="0" y1="-50" x2="0" y2="50" stroke="#D4A843" stroke-width="2"/>
+    <line x1="-50" y1="0" x2="50" y2="0" stroke="#D4A843" stroke-width="2"/>
+    <line x1="-35" y1="-35" x2="35" y2="35" stroke="#D4A843" stroke-width="1.5"/>
+    <line x1="35" y1="-35" x2="-35" y2="35" stroke="#D4A843" stroke-width="1.5"/>
+  </g>
+  <!-- Outer ornate star -->
+  <g transform="translate(60,60)">
+    <polygon points="0,-42 14,-14 42,-14 20,4 28,36 0,20 -28,36 -20,4 -42,-14 -14,-14" fill="#D4A843" opacity="0.25"/>
+    <polygon points="0,-42 14,-14 42,-14 20,4 28,36 0,20 -28,36 -20,4 -42,-14 -14,-14" fill="none" stroke="#D4A843" stroke-width="2.5"/>
+    <!-- Inner star -->
+    <polygon points="0,-28 9,-9 28,-9 14,3 18,24 0,14 -18,24 -14,3 -28,-9 -9,-9" fill="#D4A843" opacity="0.4"/>
+    <polygon points="0,-16 5,-5 16,-5 8,2 10,14 0,8 -10,14 -8,2 -16,-5 -5,-5" fill="#E8C060" opacity="0.6"/>
+  </g>
+  <!-- Corner ornaments -->
+  <g opacity="0.6">
+    <circle cx="15" cy="15" r="6" fill="#D4A843" opacity="0.5"/>
+    <circle cx="15" cy="15" r="3" fill="#2C3E6B"/>
+    <circle cx="105" cy="15" r="6" fill="#D4A843" opacity="0.5"/>
+    <circle cx="105" cy="15" r="3" fill="#2C3E6B"/>
+    <circle cx="15" cy="105" r="6" fill="#D4A843" opacity="0.5"/>
+    <circle cx="15" cy="105" r="3" fill="#2C3E6B"/>
+    <circle cx="105" cy="105" r="6" fill="#D4A843" opacity="0.5"/>
+    <circle cx="105" cy="105" r="3" fill="#2C3E6B"/>
+  </g>
+  <!-- Edge decorations -->
+  <circle cx="60" cy="8" r="2.5" fill="#D4A843" opacity="0.5"/>
+  <circle cx="60" cy="112" r="2.5" fill="#D4A843" opacity="0.5"/>
+  <circle cx="8" cy="60" r="2.5" fill="#D4A843" opacity="0.5"/>
+  <circle cx="112" cy="60" r="2.5" fill="#D4A843" opacity="0.5"/>
+  <rect x="3" y="3" width="114" height="114" fill="none" stroke="#D4A843" stroke-width="4" rx="3"/>
+</svg>
