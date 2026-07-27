@@ -1,10 +1,8 @@
 import React from 'react';
-
 interface QuantityInputProps {
   quantity: number;
   onChange: (value: number) => void;
 }
-
 export function QuantityInput({ quantity, onChange }: QuantityInputProps) {
   return (
     <div className="flex items-center space-x-0.5 font-display font-bold text-xs sm:text-base text-charcoal">

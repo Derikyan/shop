@@ -5,12 +5,10 @@ import { useAppSelector, useAppDispatch } from '@/store/hooks';
 import { selectDesignGrid, selectSelectedTileId } from '@/store/selectors';
 import { placeTile, clearCell } from '@/store/designSlice';
 import { GRID_SIZE, PALETTE_TILES } from '@/lib/constants';
-
 export function DesignGrid() {
   const grid = useAppSelector(selectDesignGrid);
   const selectedTileId = useAppSelector(selectSelectedTileId);
   const dispatch = useAppDispatch();
-
   const handleCellClick = (row: number, col: number) => {
     if (selectedTileId) {
       dispatch(placeTile({ row, col }));
@@ -18,7 +16,6 @@ export function DesignGrid() {
       dispatch(clearCell({ row, col }));
     }
   };
-
   return (
     <div className="flex flex-col h-full bg-cream-medium border-2 border-charcoal shadow-sm">
       <div className="p-3 sm:p-4 text-center border-b-2 border-charcoal bg-cream">
@@ -26,7 +23,6 @@ export function DesignGrid() {
         <p className="text-xs sm:text-sm mt-0.5">Drag and drop tiles here to create patterns.</p>
         <p className="text-[10px] sm:text-xs text-charcoal-light italic mt-1">(Select a tile from the palette, then click a cell to place it)</p>
       </div>
-      
       <div className="flex-1 flex items-center justify-center p-3 sm:p-4">
         <div 
           className="grid bg-charcoal p-[2px] shadow-card rounded-sm"
@@ -41,7 +37,6 @@ export function DesignGrid() {
           {grid.map((row, rowIndex) => (
             row.map((cellId, colIndex) => {
               const tile = cellId ? PALETTE_TILES.find(t => t.id === cellId) : null;
-              
               return (
                 <div 
                   key={`${rowIndex}-${colIndex}`}

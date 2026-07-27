@@ -4,29 +4,23 @@ import { selectCheckout, selectCheckoutErrors } from '@/store/selectors';
 import { setField, setPaymentMethod } from '@/store/checkoutSlice';
 import type { PaymentMethod } from '@/types';
 import { formatCardNumber, formatExpiry, detectCardBrand } from '@/lib/validation';
-
 export function PaymentForm() {
   const checkout = useAppSelector(selectCheckout);
   const errors = useAppSelector(selectCheckoutErrors);
   const dispatch = useAppDispatch();
-
   const handleCardNumberChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const formatted = formatCardNumber(e.target.value);
     dispatch(setField({ field: 'cardNumber', value: formatted }));
   };
-
   const handleExpiryChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const formatted = formatExpiry(e.target.value);
     dispatch(setField({ field: 'cardExpiry', value: formatted }));
   };
-
   const handleCvvChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const val = e.target.value.replace(/\D/g, '').slice(0, 4);
     dispatch(setField({ field: 'cardCvv', value: val }));
   };
-
   const cardBrand = detectCardBrand(checkout.cardNumber);
-
   const paymentOptions: { id: PaymentMethod; label: string; icon: React.ReactNode }[] = [
     {
       id: 'credit_card',
@@ -66,13 +60,11 @@ export function PaymentForm() {
       )
     }
   ];
-
   return (
     <div className="flex flex-col space-y-4">
       <div className="border-2 border-charcoal bg-cream inline-block px-3 py-1 font-display font-bold text-sm uppercase self-start shadow-sm mb-2">
         Select Payment Method:
       </div>
-
       <div className="grid grid-cols-4 border-2 border-charcoal divide-x-2 divide-charcoal">
         {paymentOptions.map((option) => (
           <label 
@@ -107,10 +99,9 @@ export function PaymentForm() {
           </label>
         ))}
       </div>
-
       {checkout.paymentMethod === 'credit_card' && (
         <div className="bg-sand p-4 border-2 border-charcoal rounded-sm shadow-sm space-y-4 mt-2">
-          {/* Card Icons */}
+          {}
           <div className="flex items-center space-x-3 mb-1">
              <div className="flex items-center justify-center w-4 h-4 rounded-full border border-navy bg-cream flex-shrink-0">
                 <div className="w-2 h-2 rounded-full bg-navy" />
@@ -127,7 +118,6 @@ export function PaymentForm() {
                </div>
              </div>
           </div>
-
           <div className="relative">
              <input
                type="text"
@@ -143,7 +133,6 @@ export function PaymentForm() {
               <span className="absolute -bottom-4 left-0 text-[10px] text-error font-bold">{errors.cardNumber}</span>
             )}
           </div>
-
           <div className="flex space-x-4 relative">
              <div className="flex-1 relative">
                 <input
@@ -160,7 +149,6 @@ export function PaymentForm() {
                   <span className="absolute -bottom-4 left-0 text-[10px] text-error font-bold">{errors.cardExpiry}</span>
                 )}
              </div>
-             
              <div className="flex-1 relative">
                 <input
                   type="text"

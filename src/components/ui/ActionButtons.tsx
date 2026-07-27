@@ -1,10 +1,8 @@
 import React from 'react';
-
 interface ActionButtonsProps {
   onAdd: () => void;
   onRemove: () => void;
 }
-
 export function ActionButtons({ onAdd, onRemove }: ActionButtonsProps) {
   return (
     <div className="flex items-center justify-center space-x-1 sm:space-x-1.5">
@@ -20,7 +18,6 @@ export function ActionButtons({ onAdd, onRemove }: ActionButtonsProps) {
         </div>
         <span className="text-[9px] sm:text-[10px] mt-0.5 leading-none">ADD</span>
       </button>
-
       <button
         onClick={onRemove}
         className="flex flex-col items-center justify-center font-bold font-display group focus:outline-none"

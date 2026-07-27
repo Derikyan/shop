@@ -1,13 +1,7 @@
 import type { TileItem, PaletteTile } from '@/types';
-
-/* ── Grid ─────────────────────────────────────────────────────────── */
 export const GRID_SIZE = 7;
-
-/* ── Shipping thresholds ──────────────────────────────────────────── */
 export const FREE_SHIPPING_THRESHOLD = 500;
 export const SHIPPING_COST = 25;
-
-/* ── Initial cart tiles (from the mockup) ─────────────────────────── */
 export const INITIAL_TILES: TileItem[] = [
   {
     id: 'ocean-wave',
@@ -46,8 +40,6 @@ export const INITIAL_TILES: TileItem[] = [
     patternColor: '#D4A843',
   },
 ];
-
-/* ── Extra tiles available for "Add New Tile" ─────────────────────── */
 export const EXTRA_TILES: TileItem[] = [
   {
     id: 'azure-mosaic',
@@ -68,8 +60,6 @@ export const EXTRA_TILES: TileItem[] = [
     patternColor: '#D4724E',
   },
 ];
-
-/* ── Design palette tiles (cart tiles + additional decorative) ───── */
 export const PALETTE_TILES: PaletteTile[] = [
   { id: 'ocean-wave', name: 'Ocean Wave', imageSrc: '/tiles/ocean-wave.svg' },
   { id: 'forest-fern', name: 'Forest Fern', imageSrc: '/tiles/forest-fern.svg' },

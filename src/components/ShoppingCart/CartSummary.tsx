@@ -2,12 +2,10 @@ import React from 'react';
 import { useAppSelector } from '@/store/hooks';
 import { selectSubtotal, selectShipping, selectGrandTotal } from '@/store/selectors';
 import { formatCurrency } from '@/lib/calculations';
-
 export function CartSummary() {
   const subtotal = useAppSelector(selectSubtotal);
   const shipping = useAppSelector(selectShipping);
   const grandTotal = useAppSelector(selectGrandTotal);
-
   return (
     <div className="flex flex-col items-end justify-center py-2 px-1 sm:px-4 space-y-1 font-display w-full sm:w-auto">
       <div className="flex items-center justify-end space-x-2 w-full">

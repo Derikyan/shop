@@ -6,12 +6,10 @@ import { incrementQuantity, decrementQuantity, setQuantity, removeItem, addItem 
 import { CartRow } from './CartRow';
 import { CartSummary } from './CartSummary';
 import { EXTRA_TILES } from '@/lib/constants';
-
 export function CartTable() {
   const items = useAppSelector(selectCartItems);
   const dispatch = useAppDispatch();
   const [showAddMenu, setShowAddMenu] = useState(false);
-
   const handleAddNewTile = (tileId: string) => {
     const tile = EXTRA_TILES.find(t => t.id === tileId);
     if (tile) {
@@ -19,7 +17,6 @@ export function CartTable() {
     }
     setShowAddMenu(false);
   };
-
   return (
     <div className="w-full bg-cream">
       <div className="border-2 border-charcoal">
@@ -43,7 +40,6 @@ export function CartTable() {
               Actions
             </div>
           </div>
-
           <div className="relative z-0">
             <AnimatePresence>
               {items.map((item) => (
@@ -60,7 +56,6 @@ export function CartTable() {
           </div>
         </div>
       </div>
-      
       <div className="flex flex-col sm:flex-row justify-between items-center border-2 border-t-0 border-charcoal bg-cream-dark p-2 sm:p-3 relative z-10 space-y-3 sm:space-y-0">
         <div className="relative w-full sm:w-auto">
           <button
@@ -73,7 +68,6 @@ export function CartTable() {
             </div>
             <span className="text-left leading-tight">Add New Tile<br/>To Cart</span>
           </button>
-
           {showAddMenu && (
             <div className="absolute bottom-full left-0 mb-1 w-full sm:w-48 bg-cream border-2 border-charcoal shadow-lg z-50">
               {EXTRA_TILES.map(tile => (
@@ -88,7 +82,6 @@ export function CartTable() {
             </div>
           )}
         </div>
-        
         <CartSummary />
       </div>
     </div>

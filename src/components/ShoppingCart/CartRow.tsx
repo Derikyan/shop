@@ -5,7 +5,6 @@ import type { TileItem } from "@/types";
 import { QuantityInput } from "../ui/QuantityInput";
 import { ActionButtons } from "../ui/ActionButtons";
 import { formatCurrency } from "@/lib/calculations";
-
 interface CartRowProps {
   item: TileItem;
   onIncrement: () => void;
@@ -13,7 +12,6 @@ interface CartRowProps {
   onSetQuantity: (qty: number) => void;
   onRemove: () => void;
 }
-
 export function CartRow({
   item,
   onIncrement,
@@ -42,7 +40,6 @@ export function CartRow({
           {item.name}
         </span>
       </div>
-
       <div className="flex items-center justify-center p-1 sm:p-2 col-span-1 border-r-2 border-charcoal h-full min-w-0">
         <div className="w-12 h-12 sm:w-16 sm:h-16 relative shadow-sm border border-charcoal rounded-sm overflow-hidden shrink-0">
           <Image
@@ -53,15 +50,12 @@ export function CartRow({
           />
         </div>
       </div>
-
       <div className="flex items-center justify-center p-1 sm:p-2 col-span-1 border-r-2 border-charcoal h-full min-w-0">
         <QuantityInput quantity={item.quantity} onChange={onSetQuantity} />
       </div>
-
       <div className="flex items-center justify-center p-1 sm:p-2 col-span-1 border-r-2 border-charcoal h-full font-display font-bold text-xs sm:text-base min-w-0">
         [{formatCurrency(item.price)}]
       </div>
-
       <div className="flex items-center justify-center p-1 col-span-1 h-full min-w-0">
         <ActionButtons onAdd={onIncrement} onRemove={onRemove} />
       </div>

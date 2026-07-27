@@ -2,20 +2,17 @@ import React from 'react';
 import { useAppSelector, useAppDispatch } from '@/store/hooks';
 import { selectCheckout, selectCheckoutErrors } from '@/store/selectors';
 import { setField } from '@/store/checkoutSlice';
-
 export function CustomerForm() {
   const checkout = useAppSelector(selectCheckout);
   const errors = useAppSelector(selectCheckoutErrors);
   const dispatch = useAppDispatch();
-
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
     dispatch(setField({ field: name as any, value }));
   };
-
   return (
     <div className="flex flex-col space-y-3 font-display">
-      {/* Customer Name */}
+      {}
       <div className="flex items-end gap-2">
         <label htmlFor="customerName" className="font-bold uppercase text-xs sm:text-sm whitespace-nowrap">
           Customer Name:
@@ -36,10 +33,9 @@ export function CustomerForm() {
           )}
         </div>
       </div>
-
-      {/* Phone and Email in 1 row */}
+      {}
       <div className="flex flex-row gap-2 sm:gap-4">
-        {/* Phone */}
+        {}
         <div className="flex items-end gap-1 flex-1 min-w-0">
           <label htmlFor="phone" className="font-bold uppercase text-xs sm:text-sm whitespace-nowrap">
             Phone:
@@ -60,8 +56,7 @@ export function CustomerForm() {
             )}
           </div>
         </div>
-
-        {/* Email */}
+        {}
         <div className="flex items-end gap-1 flex-[1.4] min-w-0">
           <label htmlFor="email" className="font-bold uppercase text-xs sm:text-sm whitespace-nowrap">
             Email:
@@ -83,8 +78,7 @@ export function CustomerForm() {
           </div>
         </div>
       </div>
-
-      {/* Shipping Address */}
+      {}
       <div className="flex items-end gap-2">
         <label htmlFor="shippingAddress" className="font-bold uppercase text-xs sm:text-sm whitespace-nowrap">
           Shipping Address:
@@ -105,8 +99,7 @@ export function CustomerForm() {
           )}
         </div>
       </div>
-
-      {/* Project Notes */}
+      {}
       <div className="flex items-end gap-2 pt-1">
         <label htmlFor="projectNotes" className="font-bold uppercase text-xs sm:text-sm whitespace-nowrap">
           Project Notes:
