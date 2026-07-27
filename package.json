@@ -8,8 +8,8 @@
     "start": "next start",
     "lint": "eslint",
     "test": "jest",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d out"
+    "predeploy": "npm run build && touch out/.nojekyll",
+    "deploy": "gh-pages -d out --dotfiles"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.12.0",
